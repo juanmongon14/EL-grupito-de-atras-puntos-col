@@ -86,72 +86,79 @@ font-family:'Abel', sans-serif ;
   height: 15px;
   margin-left: 5px;
 }
-body{
-  background-color: #DBDFFD;
-}
-.saldo{ 
-  border-radius: 10px;
-  width: 382px;
-  height: 598px ;
-  background-color: #FFFBF5;
-  margin: 0 auto  ;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.saldo.container{
+.telefono-editar-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+}
 
-}
-.texto-saldo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-.saldo-titulo{
-  font-size: 24px;
+.telefono-editar-titulo h2 {
+  font-family: 'Abel', sans-serif;
   font-weight: bold;
   margin-right: 10px;
-  font-family: 'Abel', sans-serif;
- margin-left: 20px;
- margin-top: 5px;
 }
-.valor-saldo{
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Abel', sans-serif;
-  margin-top: 5px;
-  color: #674188;
 
+.telefono-editar-titulo h3 {
+  font-family: 'Abel', sans-serif;
+  font-weight: lighter;
+  margin-left: 5px;
 }
-h3{
-  font-family:'Abel', sans-serif;
+
+.telefono-editar-titulo img {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
 }
-.redime,
-.Canjea,
-.Aliados {
-    margin-top: 50px;
-    text-align: center;
-    border-radius: 20px;
-    background-color: #F7EFE5;
-    width: 300px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contraseña-editar-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
-.redime h3,
-.Canjea h3,
-.Aliados h3 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-    color: #743c8b;
+
+.contraseña-editar-titulo h2 {
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.contraseña-editar-titulo h3 {
+  font-family: 'Abel', sans-serif;
+  font-weight: lighter;
+  margin-left: 5px;
+}
+
+.contraseña-editar-titulo img {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+.direccion-editar-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.direccion-editar-titulo h2 {
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.direccion-editar-titulo h3 {
+  font-family: 'Abel', sans-serif;
+  font-weight: lighter;
+  margin-left: 5px;
+}
+
+.direccion-editar-titulo img {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+body{
+  background-color: #DBDFFD;
 }
