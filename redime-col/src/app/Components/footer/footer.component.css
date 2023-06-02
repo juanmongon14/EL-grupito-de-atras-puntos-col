@@ -1,0 +1,42 @@
+footer{
+    background: rgba(36, 48, 155, 0.856);
+    padding-bottom: 0.9px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+a:hover{
+background-color: transparent;
+border: 2px solid #fbc2eb;
+color: #000000;
+}
+
+.contact-us{
+    width: 40%;
+    color: white;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: rgb(173, 173, 173);
+    margin-bottom: 60px;
+}

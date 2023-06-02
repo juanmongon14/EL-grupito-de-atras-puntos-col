@@ -1,0 +1,47 @@
+<app-header></app-header>
+
+<div class="body">
+    <main class="form-register" id="form-register">
+        <div class="mb-4 imglogo"></div>
+          <form class="formulario">
+            <!-- <h1>Regístrate</h1> -->
+             
+             <img src="./img/Icono redime colombia.png" alt="logo" class="logo1">
+           
+            <br>
+            <div class="form">
+              <label for="nombre"></label>
+              <input type="text" class="nombre" id="nombre" placeholder="Nombre completo" required>
+            </div>
+            <div class="form">
+              <label for="correo"></label>
+              <input type="email" class="correo" id="correo" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="form">
+              <label for="celular"></label>
+              <input type="number" class="celular" id="celular" placeholder="Celular" required>
+            </div>
+            <div class="form">
+              <label for="cedula">  </label>
+              <input type="text" class="cedula" id="cedula" placeholder="Documento de Identidad" required>
+            </div>          
+            <div class="form">
+              <label for="password"></label>
+              <input type="password" class="password" id="password" placeholder="Contraseña" required>
+            </div>
+            <div class="form">
+              <label for="confPassword"></label>
+              <input type="password" class="confPassword" id="confPassword" placeholder="Cofirmar contraseña" required>
+            </div>
+            <div class="checkbox">
+              <label for="checkbox">
+                <input type="checkbox" class="check" id="checkbox" value="agree-terms" required> Estoy de acuerdo con los <a href="#">Términos y Condiciones</a>.</label>
+            </div>
+            <br>
+            <button class="boton" type="button" id="boton">Registrarse</button>
+            <p class="copyright">&copy; Colombia Redime</p>
+          </form>
+        </main>
+</div>
+
+<app-footer></app-footer>
