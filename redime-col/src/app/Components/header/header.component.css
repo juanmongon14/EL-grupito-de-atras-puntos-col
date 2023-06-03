@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-around;
+    transition: 0.5s;
+    padding: 50px 50px 50px 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20;
+    z-index: 10;
+    background-color: #242F9B;
+    height: 50px;
+    border-radius: 15px;
+  }
+  
+  .botones {
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #ffffff9b;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    border: 1px solid #0000002b;
+  }
+  
+  .botones a {
+    display: block;
+    text-align: center; 
+  }
+  
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  
+  }
+  
+  header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header ul li{
+  list-style: none;
+  display: inline-block;
+  }
+  
+  header ul li a{
+    position:sticky;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: ; */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 10px;
+  }
+  
+  
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 1012px) {
+    nav {
+      text-align: center;
+    }
+  
+    nav ul {
+      display: block;
+      text-align: center;
+    }
+  
+    nav ul li {
+  
+      margin-bottom: 10px;
+    }
+  
+    .botones a {
+        display: block;
+        text-align: center;
+      }
+      
+    .logo {
+        display: none;
+      }
+  
+  }
