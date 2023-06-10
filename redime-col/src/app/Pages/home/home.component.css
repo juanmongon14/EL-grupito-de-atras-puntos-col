@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 :root{
     scroll-behavior: smooth;
 }
-
+.todo{
+    background-color: #9BA3EB;
+}
 .botones{
 
     display: flex;
@@ -80,7 +83,7 @@ font-size: 25px;
 .subtitulo{
 text-align: center;
 font-weight: 300;
-color: #646FD4;
+color: #242F9B;
 margin-bottom: 40px;
 font-size: 40px;
 
@@ -109,12 +112,12 @@ font-size: 40px;
 
 .n-service{
     margin-bottom: 7px;
-    color: #646FD4;
+    color: #242F9B;
 }
 
 .number{
     display: inline-block;
-    background-image: linear-gradient(to top, #242F9B 0%, #9BA3EB 100%);
+    background-color: #242F9B;
     width: 30px;
     height: 30px;
     color: white;
