@@ -1,124 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-html {
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-.body {
-    background: linear-gradient(70deg, #242F9B, #DBDFFD);
+body {
+    background-image: linear-gradient(to top, rgba(100, 111, 212, 0.39) 0%, rgba(155, 163, 235, 0.432) 100%),
+    url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-.titulo {
-    width: 100%;
-    color: black;
+.encabezado {
+    /* background: linear-gradient(70deg, #646FD4, #9BA3EB); */
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.encabezado h1 {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 100px;
-}
-
-h3 {
-    width: 100%;
-    color: black;
-    text-align: center;
+    font-size: 80px;
     font-family: 'Abel', sans-serif;
-    font-weight: bold;
-    font-size: 40px;
 }
 
-.box {
+.contenedor {
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 30px;
+    border: 1px solid black;
 }
 
-.structure {
-    align-self: center;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 70px;
-    max-width: 100%;
-    margin: 0 auto;
-    
-}
-
-.image1 {
-    grid-column: 1 / 4;
-    grid-row: 1 / 4;
-    border: 1px solid;
-    border-radius: 400px;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.642);
-}
-
-.image1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 400px;
-}
-
-.image2 {
-    grid-column: 1 / 4;
-    grid-row: 4 / 6;
-    border: 1px solid;
-    border-radius: 400px;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.642);
-}
-
-.image2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 400px;
-}
-
-.texto1 {
-    grid-column: 4 / 9;
-    grid-row: 1 / 6;
-    border: 1px solid rgba(254, 254, 254, 0.582);
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.642);
-    width: 100%;
-    border-radius: 10px;
-    background-color: rgba(254, 254, 254, 0.582);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.texto1 p {
-    margin: 20px;
-    font-size: 30px;
-    /* word-wrap: normal; */
-    font-family: 'Abel', sans-serif;
-    /* text-align: center; */
-    text-justify: inter-word;
-    padding-right: 100px;
-    padding-left: 100px;
-}
-
-.texto2 {
-    border: 1px solid rgba(254, 254, 254, 0.582);
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.642);
-    border-radius: 10px;
-    width: 100%;
-    height: 150px;
-    background-color: rgba(254, 254, 254, 0.582);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.texto2 p {
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 35px;
-    font-family: 'Abel', sans-serif;
+.contenedor h3 {
     text-align: center;
-    /* text-justify: inter-word; */
+    font-family: 'Abel', sans-serif;
+}
+
+.cartasinfo {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.carta1 {
+    align-self: flex-start;
+    border: 1px solid black;
+    background-color: #DBDFFD;
+    border-radius: 5%;
+    width: 26%;
+    height: 70%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carta2 {
+    align-self: flex-end;
+    border: 1px solid black;
+    background-color: #DBDFFD;
+    border-radius: 5%;
+    width: 26%;
+    height: 70%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carta3 {
+    align-self: flex-start;
+    border: 1px solid black;
+    background-color: #DBDFFD;
+    border-radius: 5%;
+    width: 26%;
+    height: 70%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartasinfo h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Abel', sans-serif;
+}
+
+.cartasinfo hr {
+    width: 80%;
+    height: 1px;
+    align-self: center;
+    border: none;
+    background-color: black;
+}
+
+.cartasinfo .texto {
+    margin: 50px;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.texto p {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Abel', sans-serif;
+    justify-self: center;
+    align-self: center;
 }
