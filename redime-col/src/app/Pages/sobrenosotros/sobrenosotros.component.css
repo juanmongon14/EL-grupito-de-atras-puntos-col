@@ -7,7 +7,7 @@
 
 body {
     background-image: linear-gradient(to top, rgba(100, 111, 212, 0.39) 0%, rgba(155, 163, 235, 0.432) 100%),
-    url();
+    url(../../../img/compra_internet.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -19,7 +19,6 @@ body {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    border: 1px solid black;
 }
 
 .encabezado h1 {
@@ -33,7 +32,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
 }
 
 .contenedor h3 {
@@ -52,7 +50,6 @@ body {
 
 .carta1 {
     align-self: flex-start;
-    border: 1px solid black;
     background-color: #DBDFFD;
     border-radius: 5%;
     width: 26%;
@@ -64,7 +61,6 @@ body {
 
 .carta2 {
     align-self: flex-end;
-    border: 1px solid black;
     background-color: #DBDFFD;
     border-radius: 5%;
     width: 26%;
@@ -76,7 +72,6 @@ body {
 
 .carta3 {
     align-self: flex-start;
-    border: 1px solid black;
     background-color: #DBDFFD;
     border-radius: 5%;
     width: 26%;
@@ -104,7 +99,6 @@ body {
 .cartasinfo .texto {
     margin: 50px;
     height: 100%;
-    border: 1px solid black;
     display: flex;
 }
 
