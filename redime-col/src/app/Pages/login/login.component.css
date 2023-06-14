@@ -7,6 +7,8 @@ html,
 .body {
   display: flex;
   align-items: center;
+  margin: 0%;
+  padding: 30px;
   justify-content: center;
   font-family: 'Source Sans Pro', sans-serif;
   background-image: linear-gradient(to right, rgb(155, 163, 235) 0%, rgb(155, 163, 235) 50%, rgb(219, 223, 253) 50%, rgb(219, 223, 253) 100%);
@@ -27,6 +29,7 @@ html,
 .form-login {
   width: 400px;
   height: 450px;
+  margin: 30px;
   padding: 50px 50px 50px 70px;
   background-color: rgba(234, 235, 244, 0.874);
   border-radius: 30px;
@@ -70,7 +73,7 @@ html,
 
 
 .boton:hover{
-  background-color: rgb(72, 80, 151);
+  background-color: rgb(59, 65, 124);
   transition: 0.2s;
   cursor: pointer;
 }
@@ -83,6 +86,7 @@ html,
     font-size: 23px;
     background-color: rgb(100, 111, 212);
     padding: 8px;
+    margin-bottom: 30px;
     border-style: none;
     border-radius: 20px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.289);
