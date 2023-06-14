@@ -5,6 +5,8 @@ footer{
     align-items: center;
     padding-right: 25px;
     padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 3px;
 }
 
 .contenedor {
@@ -17,15 +19,20 @@ footer{
 
 .marca {
     width: 25%;
-    color: white;
+    color: black;
 }
 
 .marca h2 {
     font-size: 30px;
 }
 
-.logorc h2 {
-    color: white;
+.marca p {
+    font-weight: bold;
+}
+
+.logorc img {
+    height: 60px;
+    width: 60px;
 }
 
 .redes {
@@ -35,10 +42,9 @@ footer{
     align-items: center;
 }
 
-.redes a {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
+.redes img {
+    height: 50px;
+    width: 50px;
 }
 
 
