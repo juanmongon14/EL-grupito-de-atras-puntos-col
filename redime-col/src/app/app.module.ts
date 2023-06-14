@@ -10,6 +10,10 @@ import { SobrenosotrosComponent } from './Pages/sobrenosotros/sobrenosotros.comp
 import { LoginComponent } from './Pages/login/login.component';
 import { RegistroComponent } from './Pages/registro/registro.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { PerfilUsuarioComponent } from './Pages/perfil-usuario/perfil-usuario.component';
+import { PerfilComercioComponent } from './Pages/perfil-comercio/perfil-comercio.component';
+import { EditarUsuarioComponent } from './Pages/editar-usuario/editar-usuario.component';
+import { EditarComercioComponent } from './Pages/editar-comercio/editar-comercio.component';
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { FooterComponent } from './Components/footer/footer.component';
     SobrenosotrosComponent,
     LoginComponent,
     RegistroComponent,
-    FooterComponent
+    FooterComponent,
+    PerfilUsuarioComponent,
+    PerfilComercioComponent,
+    EditarUsuarioComponent,
+    EditarComercioComponent
   ],
   imports: [
     BrowserModule,

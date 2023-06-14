@@ -7,7 +7,7 @@
 
 body {
     background-image: linear-gradient(to top, rgba(100, 111, 212, 0.39) 0%, rgba(155, 163, 235, 0.432) 100%),
-    url(../../../img/compra_internet.jpeg);
+    url(../../../assets/img/compra_internet.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -15,7 +15,6 @@ body {
 }
 
 .encabezado {
-    /* background: linear-gradient(70deg, #646FD4, #9BA3EB); */
     display: flex;
     justify-content:space-evenly;
     align-items: center;

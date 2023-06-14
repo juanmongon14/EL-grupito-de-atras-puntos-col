@@ -62,7 +62,7 @@ body {
 .imagen_producto {
   height: 300px;
   width: 250px;
-  background-image: url(./img/imgProductos/iPhone11.png);
+  background-image: url(../../../assets/img/iPhone11.png);
   background-size: cover;
   margin-bottom: 200px;
   transition: 300ms;
@@ -72,7 +72,7 @@ body {
 .imagen_producto2 {
   height: 300px;
   width: 310px;
-  background-image: url(./img/imgProductos/carro.png);
+  background-image: url(../../../assets/img/carro.png);
   background-size: cover;
   margin-bottom: 200px;
   transition: 300ms;
@@ -82,7 +82,7 @@ body {
 .imagen_producto3 {
   height: 300px;
   width: 310px;
-  background-image: url(./img/imgProductos/pc.png);
+  background-image: url(../../../assets/img/pc.png);
   background-size: cover;
   margin-bottom: 200px;
   transition: 300ms;
@@ -115,21 +115,21 @@ body {
   transform: translateY(-40px);
   transition: 300ms;
   filter: none;
-  background-image: url(./img/imgProductos/apple_iphone_11_pro_max_space_grey_1_34.png);
+  background-image: url(../../../assets/img/apple_iphone_11_pro_max_space_grey_1_34.png);
 }
 
 .card:hover .imagen_producto2 {
   transform: translateY(-40px);
   transition: 300ms;
   filter: none;
-  background-image: url(./img/imgProductos/4-frenteCarro.png);
+  background-image: url(../../../assets/img/4-frenteCarro.png);
 }
 
 .card:hover .imagen_producto3 {
   transform: translateY(-40px);
   transition: 300ms;
   filter: none;
-  background-image: url(./img/imgProductos/pcCompleto.png);
+  background-image: url(../../../assets/img/pcCompleto.png);
 }
 
 .card:hover .producto {
