@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 footer{
     background: #9BA3EB;
     height: 80px;
@@ -7,6 +9,7 @@ footer{
     padding-left: 25px;
     padding-top: 5px;
     padding-bottom: 3px;
+    font-family: 'Abel', sans-serif;
 }
 
 .contenedor {

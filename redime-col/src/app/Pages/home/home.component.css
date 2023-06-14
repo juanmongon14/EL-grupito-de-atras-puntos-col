@@ -44,7 +44,7 @@ body {
 .header{
     height: 88vh;
     background-image: linear-gradient(to top, rgba(100, 111, 212, 0.39) 0%, rgba(155, 163, 235, 0.432) 100%),
-     url(../../../assets/img/imagenInicio.jpg);
+     url(../../../assets/img/compraRC.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      background-attachment: fixed;
