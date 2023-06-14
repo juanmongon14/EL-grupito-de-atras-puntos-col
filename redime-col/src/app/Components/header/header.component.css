@@ -79,6 +79,12 @@ header ul li a{
   padding: 10px;
 }
 
+ul img {
+  height: 85px;
+  width: 250px;
+  border: 1px solid black;
+}
+
 
 
 /* Estilos responsivos */
