@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-  }
-  
   header{
     top: 0;
     left: 0;
@@ -13,8 +8,6 @@
     z-index: 10;
     background-color: #242F9B;
   }
-  
-  
   
   header .logo{
   position: relative;
