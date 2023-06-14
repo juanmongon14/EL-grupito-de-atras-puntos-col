@@ -1,7 +1,14 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+
+  header{
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 10px;
+    z-index: 10;
+    background-color: #242F9B;
+  }
 
 header{
   top: 0;
@@ -13,8 +20,6 @@ header{
   z-index: 10;
   background-color: #242F9B;
 }
-
-
 
 header .logo{
 position: relative;
