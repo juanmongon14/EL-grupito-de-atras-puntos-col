@@ -9,16 +9,21 @@
   
 .box {
     width: 30%;
-    height: 565px;
+    height: 570px;
     padding: 20px;
     background-color: #DBDFFD;
     border-radius: 30px;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.642);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
-.titulo {
+/* .titulo {
     border: 1px solid red;
-}
+} */
 
 h1 {
     text-align: center;
@@ -27,7 +32,8 @@ h1 {
 }
 
 .parrafo {
-    border: 1px solid red;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .parrafo p {
@@ -37,11 +43,13 @@ h1 {
 }
   
 .formulario {
+    margin-left: 15px;
+    margin-right: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
   
 .formulario div {
@@ -59,19 +67,19 @@ input[type="text"] {
     height: 22px;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 textarea {
     width: 95%;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-.boton {
+/* .boton {
     border: 1px solid red;
-}
+} */
   
 button {
     display: flex;
@@ -83,7 +91,7 @@ button {
     background-color: #242F9B;
     color: white;
     border: 1px solid;
-    border-radius: 8px;
+    border-radius: 15px;
     width: 105px;
     height: 60px;
     font-size: 30px;
