@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 footer{
-    background: #9BA3EB;
+    background: #242F9B;
     height: 80px;
     display: flex;
     align-items: center;
@@ -9,7 +9,9 @@ footer{
     padding-left: 25px;
     padding-top: 5px;
     padding-bottom: 3px;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    color: white;
 }
 
 .contenedor {
@@ -22,15 +24,16 @@ footer{
 
 .marca {
     width: 25%;
-    color: black;
 }
 
 .marca h2 {
     font-size: 30px;
+    font-weight: 200;
 }
 
 .marca p {
-    font-weight: bold;
+    font-weight: 200;
+    font-size: 15px;
 }
 
 .logorc img {

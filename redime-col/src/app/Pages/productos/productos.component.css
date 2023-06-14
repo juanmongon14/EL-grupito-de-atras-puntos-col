@@ -1,7 +1,5 @@
 /* Estilos base */
 
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +23,7 @@
   display: inline-block;
   max-width: 100%;
   /* padding: 10px; */
-  font-family: 'Abel', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: white;
 }
 
@@ -57,7 +55,7 @@
   width: 350px;
   margin: 50px;
   transition: 300ms;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .producto,.producto2,.producto3 {
