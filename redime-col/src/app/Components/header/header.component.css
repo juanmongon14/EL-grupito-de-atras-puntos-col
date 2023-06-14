@@ -1,16 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  header{
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-around;
-    transition: 0.7s;
-    padding: 30px 10px;
-    z-index: 10;
-    background-color: #242F9B;
-  }
-
-header{
+header {
   top: 0;
   left: 0;
   display: flex;
@@ -21,39 +14,65 @@ header{
   background-color: #242F9B;
 }
 
-header .logo{
-position: relative;
-color: rgb(0, 0, 0);
-font-weight: bold;
-font-size: 2em;
-letter-spacing: 2px;
-transition: 1.5s;
-text-decoration: none;
+.botones a{
+  display: block;
+ text-align: center;
+ font-size: 1.5em; 
+ display: inline-block;
+ border-radius: 25px;
+ background-color: #9BA3EB;
+ padding: 8px 15px;
+ margin-right: 5px;
+ border: 2px solid #000;
 }
 
-.botones {
+.logo-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242F9B;
+  z-index: 10;
+  padding: 30px 10px;
+}
+
+.logo-container .logo {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 2px;
+  transition: 1.5s;
+  text-decoration: none;
+}
+
+.logo-container .logo img {
+  max-height: 100px; /* Ajusta el valor según sea necesario */
+}
+
+.logo-container .botones {
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: #9BA3EB;
   padding: 8px 15px;
   margin-right: 5px;
   border: 2px solid #000;
 }
 
-.botones a {
+.logo-container .botones a {
   display: block;
-  text-align: center; 
+  text-align: center;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
-
 }
 
-header ul{
+header ul {
   position: relative;
   display: flex;
   justify-content: center;
@@ -63,13 +82,12 @@ header ul{
   padding: 0;
 }
 
-header ul li{
-list-style: none;
-display: inline-block;
+header ul li {
+  list-style: none;
+  display: inline-block;
 }
 
-header ul li a{
-  position:sticky;
+header ul li a {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 15px;
   text-decoration: none;
@@ -77,6 +95,7 @@ header ul li a{
   letter-spacing: 2px;
   font-weight: 600;
   padding: 10px;
+  font-size: 1.5em; 
 }
 
 ul img {
@@ -86,9 +105,7 @@ ul img {
 }
 
 
-
-/* Estilos responsivos */
-@media screen and (max-width: 1012px) {
+@media screen and (max-width: 1180px) {
   nav {
     text-align: center;
   }
@@ -99,17 +116,55 @@ ul img {
   }
 
   nav ul li {
-
     margin-bottom: 10px;
   }
 
   .botones a {
-      display: block;
-      text-align: center;
-    }
-    
-  .logo {
-      display: none;
-    }
+    display: block;
+    text-align: center;
+  }
+}
 
+@media screen and (max-width: 721px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-actions {
+    margin-top: auto;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .botones.create-account {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1162px) {
+  .logo-container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+   }
 }
