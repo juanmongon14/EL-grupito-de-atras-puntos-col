@@ -18,16 +18,17 @@ header{
 
 header .logo{
 position: relative;
-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
 font-weight: bold;
-font-size: 3em;
+font-size: 2em;
 letter-spacing: 2px;
 transition: 1.5s;
 text-decoration: none;
 }
+
 .botones {
   display: inline-block;
-  border-radius: 50px;
+  border-radius: 5px;
   background-color: #9BA3EB;
   padding: 8px 15px;
   margin-right: 5px;
@@ -67,7 +68,7 @@ header ul li a{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 15px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   letter-spacing: 2px;
   font-weight: 600;
   padding: 10px;
@@ -100,57 +101,4 @@ header ul li a{
       display: none;
     }
 
-}
-
-@media screen and (max-width: 576px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }a
-
-  nav ul li {
-    margin-bottom: 10px;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  
-}
-
-@media screen and (max-width: 1012px) {
-  .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .user-actions {
-    margin-top: auto;
-  }
-}
-
-@media screen and (min-width: 1013px) {
-  .botones.create-account {
-    margin-left: 10px;
-  }
-}
-
-@media screen and (min-width: 1013px) and (max-width: 1418px) {
-  header ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  header ul li.botones {
-    flex: 0 0 auto;
-    margin-right: 10px;
-  }
 }
