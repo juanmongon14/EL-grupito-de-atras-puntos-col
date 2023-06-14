@@ -27,12 +27,12 @@ html,
 
 
 .form-login {
-  width: 400px;
+  width: 370px;
   height: 450px;
   margin: 30px;
   padding: 50px 50px 50px 70px;
-  background-color: rgba(234, 235, 244, 0.874);
-  border-radius: 30px;
+  background-color: rgba(231, 232, 238, 0.641);
+  border-radius: 30px 0px 30px 0px ;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.075);
   border: 1px solid #afadad25;
 }
