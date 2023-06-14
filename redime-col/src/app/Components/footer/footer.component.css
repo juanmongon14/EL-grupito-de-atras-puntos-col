@@ -1,42 +1,44 @@
 footer{
     background: rgba(36, 48, 155, 0.856);
-    padding-bottom: 0.9px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
-.footer-content{
+.contenedor {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 40px;
 }
 
-a:hover{
-background-color: transparent;
-border: 2px solid #fbc2eb;
-color: #000000;
-}
-
-.contact-us{
-    width: 40%;
+.marca {
+    width: 25%;
     color: white;
 }
 
-.brand{
-    font-weight: 500;
-    font-size: 40px;
+.marca h2 {
+    font-size: 30px;
 }
 
-.brand+p{
-    font-weight: 500;
+.logorc h2 {
+    color: white;
 }
 
-.line{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 2px;
-    background: rgb(173, 173, 173);
-    margin-bottom: 60px;
+.redes {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.redes a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
