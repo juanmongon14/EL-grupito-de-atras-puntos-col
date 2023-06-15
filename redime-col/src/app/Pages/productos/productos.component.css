@@ -144,7 +144,7 @@
 }
 
 .card:hover .producto {
-  background-image: radial-gradient(white, rgb(67, 64, 112));
+  background-image: radial-gradient(white, rgb(0, 0, 0));
 }
 
 .card:hover .producto2 {
