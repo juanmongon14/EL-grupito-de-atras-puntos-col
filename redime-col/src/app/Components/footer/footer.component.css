@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 footer{
-    background: #242F9B;
+    background: #24309be7;
     height: 120px;
     display: flex;
     align-items: center;
@@ -59,6 +59,7 @@ footer{
     font-size: 17px;
     text-decoration: none;
     color: #AAAAAA;
+
 }
 
 .redes {
