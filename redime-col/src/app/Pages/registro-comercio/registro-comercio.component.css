@@ -50,8 +50,7 @@ html,
 .correo,
 .cedula,
 .celular,
-.password,
-.confPassword {
+.password {
   width: 93%;
   margin-bottom: 10px;
   border-radius: 6px;
@@ -80,6 +79,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 23px;
   background-color: rgb(100, 111, 212);
   padding: 8px;
+  margin-bottom: 20px;
   border-style: none;
   border-radius: 20px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.289);
