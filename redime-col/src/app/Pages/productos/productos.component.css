@@ -33,7 +33,7 @@
   justify-content: center;
   align-items: center;
   font-family: 'Abel', sans-serif; */
-  background-image: linear-gradient(to top, #222861b3 0%, #24309baf 100%),
+  background-image: linear-gradient(to top, #5e69ccb3 0%, #9198deaf 100%),
   url(../../../assets/img/imagenInicio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,7 +105,7 @@
 .detalle3 {
   height: 250px;
   width: 350px;
-  background-color: #646FD4;
+  background-color: #DBDFFD;
   position: absolute;
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
