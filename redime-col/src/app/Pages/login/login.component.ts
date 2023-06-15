@@ -16,7 +16,7 @@ export class LoginComponent {
   loginUser(){
 
     this.UserService.login(this.email, this.password)
-
+    alert("Ingreso exitoso");
     console.log("email: ", this.email)
     console.log("password: ", this.password);
   }

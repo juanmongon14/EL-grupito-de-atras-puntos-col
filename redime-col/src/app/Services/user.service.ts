@@ -10,7 +10,7 @@ export class UserService {
   private userData!:string;
   private ApiUrl = "http://localhost:5000/users";
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) {}
 
   login(email:string, password:string):void {
     const loginUrl = `${this.ApiUrl}/login`
@@ -34,6 +34,26 @@ export class UserService {
           console.error(`codigo de error ${error.status}` + `mensaje: ${error.error}`)
         }
         }
+      }
+    )
+  }
+
+  create(name:string,email:string,phone:string,documentId:string,password:string):void{
+    const createUrl = `${this.ApiUrl}/create`
+    const formData = {
+      name: name,
+      email: email,
+      phone:phone,
+      documentId:documentId,
+      password: password
+    }
+    this.http.post(createUrl,formData)
+    .subscribe(
+      (response:any) => {
+        console.log("Registro exitoso. ", response);
+      },
+      (error) => {
+        console.log("Error: ", error);
       }
     )
   }

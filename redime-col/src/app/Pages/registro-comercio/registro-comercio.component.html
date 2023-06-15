@@ -1,38 +1,37 @@
 <div class="body">
     <main class="form-register" id="form-register">
         <div class="mb-4 imglogo"></div>
-          <form class="formulario">
-            <!-- <h1>Regístrate</h1> -->
+          <form class="formulario" (ngSubmit)="createComercio()" #createForm="ngForm">
              
              <img src="../../../assets/img/Icono_redime_colombia-1.png" alt="logo" class="logo1">
            
             <br>
             <div class="form">
               <label for="nombre"></label>
-              <input type="text" class="nombre" id="nombre" placeholder="Nombre representante" required>
+              <input type="text" class="nombre" placeholder="Nombre representante" name="name" [(ngModel)]="name" required>
             </div>
             <div class="form">
               <label for="correo"></label>
-              <input type="email" class="correo" id="correo" placeholder="Nombre empresa" required>
+              <input type="email" class="correo" placeholder="Nombre empresa" name="nameEmpresa" [(ngModel)]="nameEmpresa" required>
             </div>
             <div class="form">
               <label for="celular"></label>
-              <input type="number" class="celular" id="celular" placeholder="Teléfono de contacto" required>
+              <input type="number" class="celular" placeholder="Teléfono de contacto" name="phone" [(ngModel)]="phone" required>
             </div>
             <div class="form">
               <label for="cedula">  </label>
-              <input type="text" class="cedula" id="cedula" placeholder="NIT" required>
+              <input type="text" class="cedula" placeholder="NIT" name="nit" [(ngModel)]="nit" required>
             </div>          
             <div class="form">
               <label for="password"></label>
-              <input type="password" class="password" id="password" placeholder="Contraseña" required>
+              <input type="password" class="password" placeholder="Contraseña" name="password" [(ngModel)]="password" required>
             </div>
             <div class="checkbox">
               <label for="checkbox">
-                <input type="checkbox" class="check" id="checkbox" value="agree-terms" required> Estoy de acuerdo con los <a href="#">Términos y Condiciones</a>.</label>
+                <input type="checkbox" class="check" value="agree-terms" required> Estoy de acuerdo con los <a href="https://www.puntoscolombia.com/empresas/legal/terminos-y-condiciones">Términos y Condiciones</a>.</label>
             </div>
             <br>
-            <button class="boton" type="button" id="boton">Registrarse</button>
+            <button class="boton" type="submit" [disabled]="!createForm.form.valid">Registrarse</button>
             <p class="copyright">&copy; Colombia Redime</p>
           </form>
         </main>
