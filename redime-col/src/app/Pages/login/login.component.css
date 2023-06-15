@@ -18,7 +18,7 @@ html,
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: none;
   font-family: 'Source Sans Pro', sans-serif;
   background-image: linear-gradient(to right, rgb(155, 163, 235) 0%, rgb(155, 163, 235) 50%, rgb(219, 223, 253) 50%, rgb(219, 223, 253) 100%);
 }
@@ -38,7 +38,7 @@ html,
 .form-login {
   width: 370px;
   height: 450px;
-  margin: 30px;
+  margin: 5%;
   padding: 50px 50px 50px 70px;
   background-color: rgba(231, 232, 238, 0.641);
   border-radius: 30px;
