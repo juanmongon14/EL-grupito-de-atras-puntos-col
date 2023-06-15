@@ -7,6 +7,8 @@ import { ContactoComponent } from './Pages/contacto/contacto.component';
 import { SobrenosotrosComponent } from './Pages/sobrenosotros/sobrenosotros.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { RegistroComponent } from './Pages/registro/registro.component';
+import { LoginComercioComponent } from './Pages/login-comercio/login-comercio.component';
+import { RegistroComercioComponent } from './Pages/registro-comercio/registro-comercio.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -14,7 +16,9 @@ const routes: Routes = [
   {path:'contacto', component:ContactoComponent},
   {path:'nosotros', component:SobrenosotrosComponent},
   {path:'login', component:LoginComponent},
-  {path:'registro', component:RegistroComponent}
+  {path:'registro', component:RegistroComponent},
+  {path:'logincomercio', component:LoginComercioComponent},
+  {path:'registrocomercio', component:RegistroComercioComponent}
 ];
 
 @NgModule({
