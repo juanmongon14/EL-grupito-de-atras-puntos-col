@@ -24,6 +24,10 @@
   max-width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
+  background-color: #5e69ccb3;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  animation: bounce 2s infinite;
 }
 
 .body {
@@ -210,4 +214,10 @@ p {
     max-width: 350px;
     margin: 30px;
   }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
