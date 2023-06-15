@@ -1,0 +1,159 @@
+.header {
+    background: #242F9B;
+    border-radius: 5px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .imagenusuario {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  
+  .imagenusuario img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  .Negocio {
+    font-family: 'Abel', sans-serif;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 30px;
+    justify-content: center; 
+  }
+  
+  .contenedor-estadisticas,
+  .contenedor-market-maker {
+    flex-basis: 100%; 
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  
+  .market-maker {
+    width: fit-content; 
+    margin-bottom: 10px;
+    border: 1px solid #242F9B;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+  
+  
+  .market-maker h2 {
+    margin: 0 10px;
+  }
+  .estadisticas {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #242F9B;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .estadisticas h2 {
+    margin: 0 10px;
+  }
+  
+  .estadisticas img {
+    order: -1;
+    margin-right: 10px;
+  }
+  
+  .market-maker {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #242F9B; 
+    border-radius: 5px; 
+    padding: 10px; 
+  }
+  
+  .market-maker h2 {
+    margin-right: 10px;
+    margin-left: 10px;
+    order: 2;
+  }
+  
+  .market-maker img {
+    order: 1;
+  }
+  
+  
+  .estadisticas h2,
+  .market-maker h2,
+  .tus-pedidos h1,
+  .tus-productos h1,
+  .pagos-facturas h1 {
+    font-family: 'Abel', sans-serif;
+    color: #242F9B;
+    margin: 0;
+  }
+  
+  .tus-pedidos,
+  .tus-productos,
+  .pagos-facturas {
+    display: flex;
+    align-items: center;
+    margin: 5px 20px;
+    padding: 10px;
+    border: 1px solid #242F9B;
+    border-radius: 5px;
+  }
+  
+  .tus-pedidos img,
+  .tus-productos img,
+  .pagos-facturas img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  body {
+    background-color: #fff;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .logo img {
+      width: 150px;
+    }
+  
+    .container {
+      margin-left: 0;
+      justify-content: flex-start;
+    }
+  
+    .contenedor-estadisticas,
+    .contenedor-market-maker {
+      flex-basis: 50%; 
+    }
+  
+    .tus-pedidos,
+    .tus-productos,
+    .pagos-facturas {
+      flex-basis: 50%;
+    }
+  }
