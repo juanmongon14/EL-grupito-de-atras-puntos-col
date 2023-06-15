@@ -14,6 +14,8 @@ import { PerfilUsuarioComponent } from './Pages/perfil-usuario/perfil-usuario.co
 import { PerfilComercioComponent } from './Pages/perfil-comercio/perfil-comercio.component';
 import { EditarUsuarioComponent } from './Pages/editar-usuario/editar-usuario.component';
 import { EditarComercioComponent } from './Pages/editar-comercio/editar-comercio.component';
+import { LoginComercioComponent } from './Pages/login-comercio/login-comercio.component';
+import { RegistroComercioComponent } from './Pages/registro-comercio/registro-comercio.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { EditarComercioComponent } from './Pages/editar-comercio/editar-comercio
     PerfilUsuarioComponent,
     PerfilComercioComponent,
     EditarUsuarioComponent,
-    EditarComercioComponent
+    EditarComercioComponent,
+    LoginComercioComponent,
+    RegistroComercioComponent
   ],
   imports: [
     BrowserModule,
