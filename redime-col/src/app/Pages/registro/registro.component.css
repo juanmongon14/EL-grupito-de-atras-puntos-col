@@ -38,7 +38,8 @@ html,
   width: 400px;
   height: 500px;
   padding: 50px 70px 100px 70px;
-  background-color: rgba(234, 235, 244, 0.874);
+  margin: 4%;
+  background-color: rgba(231, 232, 238, 0.641);
   border-radius: 30px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.075);
   border: 1px solid #afadad25;
