@@ -69,8 +69,38 @@ header ul li a:hover {
   color: black;
 }
 
+/* Estilos celulares */
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width:414px) {
+
+}
+
+/* Estilos tabletas/iPad */
+
+@media screen and (max-width:912px){
+  ul {
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+  }
+  ul .opciones {
+    margin-bottom: 10px;
+  }
+  ul img {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 1180px) {
   nav {
     text-align: center;
   }
@@ -132,4 +162,4 @@ header ul li a:hover {
     display: flex;
     justify-content: center;
    }
-}
+} */
