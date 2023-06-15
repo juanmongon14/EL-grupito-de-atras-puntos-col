@@ -29,7 +29,7 @@ html,
     height: 80px;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 5px;
+    border-radius: 5px 5px 5px 0px;
     opacity: 80%;
     margin-left: 20%;
   }
@@ -38,10 +38,10 @@ html,
 .form-login {
   width: 370px;
   height: 450px;
-  margin: 5%;
+  margin: 3%;
   padding: 50px 50px 50px 70px;
   background-color: rgba(231, 232, 238, 0.641);
-  border-radius: 30px;
+  border-radius: 0px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.075);
   border: 1px solid #63626225;
 }

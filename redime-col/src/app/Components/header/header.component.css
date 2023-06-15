@@ -46,8 +46,8 @@ ul {
 }
 
 ul img {
-  height: 85px;
-  width: 250px;
+  height: 70px;
+  width: 220px;
 }
 
 header ul li a {
@@ -58,14 +58,15 @@ header ul li a {
   letter-spacing: 1px;
   font-weight: 300;
   padding: 10px;
-  font-size: 1.5em; 
+  font-size: 1.2em; 
 }
 
 header ul li a:hover {
   background-color: #9BA3EB;
+  height: 90px;
+  width: 150px;
   transition: 0.4s;
   color: black;
-  border-radius: 10px;
 }
 
 
