@@ -13,19 +13,12 @@
               <input type="email" class="correo" placeholder="Correo Electronico" name="email" [(ngModel)]="email" required>
      
             </div>
+            <br>
             <div class="form">
               <label for="password"></label>
               <input type="password" class="password" placeholder="Contraseña" name="password" [(ngModel)]="password" required>
-     
-            </div>
-  
-            <div class="check">
-              <label for="checkbox">
-                <input type="checkbox" class="check" id="checkbox" value="agree-terms" required> Estoy de acuerdo con los <a href="https://www.puntoscolombia.com/personas/legal/persona-natural">Términos y Condiciones</a>.</label>
             </div>
             <br>
-  
-  
             <br>
             <button class="boton" type="submit" [disabled]="!loginForm.form.valid">Iniciar sesión</button>
             <p class="copyright">&copy; Redime Colombia</p>
