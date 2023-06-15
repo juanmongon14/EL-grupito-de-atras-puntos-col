@@ -1,4 +1,5 @@
 /* Estilos base */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,28 +7,38 @@
 }
 
 .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-bottom: 20px;
-  background-color: #9BA3EB;
   margin: 0;
   padding: 25px;
 }
 
 .titulo h1 {
-  font-size: 48px;
-  background-color: #242F9B;
+  font-size: 65px;
+  /* background-color: #242F9B; */
   border-radius: 20px;
   display: inline-block;
   max-width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
 }
 
-body {
-  height: 130vh;
+.body {
+  /* height: 130vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Abel', sans-serif; */
+  background-image: linear-gradient(to top, #222861b3 0%, #24309baf 100%),
+  url(../../../assets/img/imagenInicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .container {
@@ -37,7 +48,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: #9BA3EB;
 }
 
 .card {
@@ -45,6 +55,7 @@ body {
   width: 350px;
   margin: 50px;
   transition: 300ms;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .producto,.producto2,.producto3 {
@@ -133,7 +144,7 @@ body {
 }
 
 .card:hover .producto {
-  background-image: radial-gradient(white, rgb(67, 64, 112));
+  background-image: radial-gradient(white, rgb(0, 0, 0));
 }
 
 .card:hover .producto2 {
@@ -163,7 +174,7 @@ p {
   width: 150px;
   margin: auto;
   cursor: pointer;
-  background: #242F9B;
+  background-color: #646FD4;
   background-image: -webkit-linear-gradient(top, #242F9B, #242F9B);
   background-image: -moz-linear-gradient(top, #242F9B, #242F9B);
   background-image: -ms-linear-gradient(top, #242F9B, #242F9B);

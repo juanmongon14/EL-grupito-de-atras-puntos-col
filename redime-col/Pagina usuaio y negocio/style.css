@@ -86,6 +86,45 @@
   }
   
   body {
-    background-color: #DBDFFD;
+    background-color: #fff;
   }
 
+  @media screen and (max-width: 767px) {
+    .imagenusuario {
+        justify-content: flex-start;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .imagenusuario img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .container {
+        margin-top: 20px;
+        margin-bottom: -10px;
+        margin-left: 0;
+    }
+
+    .tus-bonos,
+    .tus-compras,
+    .favoritos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tus-bonos img,
+    .tus-compras img,
+    .favoritos img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .tus-bonos h1,
+    .tus-compras h1,
+    .favoritos h1 {
+        font-size: 14px;
+    }
+}
