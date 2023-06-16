@@ -53,6 +53,7 @@ export class UserService {
     .subscribe(
       (response:any) => {
         console.log("Registro exitoso. ", response);
+        this.router.navigate(['/login']);
       },
       (error) => {
         console.log("Error: ", error);

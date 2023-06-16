@@ -52,6 +52,7 @@ export class ComercioService {
     .subscribe(
       (response:any) => {
         console.log("Registro exitoso. ", response);
+        this.router.navigate(['/logincomercio']);
       },
       (error) => {
         console.log("Error: ", error);
