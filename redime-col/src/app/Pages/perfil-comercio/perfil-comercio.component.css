@@ -30,11 +30,35 @@
     max-height: 150px;
   }
   
-  .Negocio {
+  /* .Negocio {
     font-family: 'Abel', sans-serif;
     margin-top: 20px;
     margin-left: 30px;
-  }
+  } */
+
+  .Negocio{
+    font-family: 'Abel', sans-serif ;
+    margin-top: 40px;
+    margin-left: 30px;
+ }
+ .Negocio ul{
+  list-style: none;
+ }
+ .Negocio ul li{
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+ }
+ .editarperfil{
+  margin-left: 30px;
+  margin-top: 40px;
+ }
+ .editarperfil button{
+  border: 1px solid #242F9B;
+  border-radius: 5px;
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+ }
   
   .container {
     display: flex;
