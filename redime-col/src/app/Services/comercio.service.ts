@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ export class ComercioService {
   private nit!:string;
   private ApiUrl = "http://localhost:5000/comercios";
 
-  constructor(private http:HttpClient) {}
+  constructor(private http:HttpClient, private router: Router) {}
 
   login(nit:string, password:string):void {
     const loginUrl = `${this.ApiUrl}/login`
@@ -23,6 +24,7 @@ export class ComercioService {
         localStorage.setItem("token", response.token)
         console.log("response: ", response);
         this.nit = formData.nit;
+        this.router.navigate(['/perfilcomercio']);
       },
       (error) => {
         if(error instanceof HttpErrorResponse){

@@ -9,6 +9,10 @@ import { LoginComponent } from './Pages/login/login.component';
 import { RegistroComponent } from './Pages/registro/registro.component';
 import { LoginComercioComponent } from './Pages/login-comercio/login-comercio.component';
 import { RegistroComercioComponent } from './Pages/registro-comercio/registro-comercio.component';
+import { PerfilUsuarioComponent } from './Pages/perfil-usuario/perfil-usuario.component';
+import { PerfilComercioComponent } from './Pages/perfil-comercio/perfil-comercio.component';
+import { EditarUsuarioComponent } from './Pages/editar-usuario/editar-usuario.component';
+import { EditarComercioComponent } from './Pages/editar-comercio/editar-comercio.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -18,7 +22,11 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'registro', component:RegistroComponent},
   {path:'logincomercio', component:LoginComercioComponent},
-  {path:'registrocomercio', component:RegistroComercioComponent}
+  {path:'registrocomercio', component:RegistroComercioComponent},
+  {path:'perfilusuario', component:PerfilUsuarioComponent},
+  {path:'perfilcomercio',component:PerfilComercioComponent},
+  {path:'editarusuario',component:EditarUsuarioComponent},
+  {path:'editarcomercio',component:EditarComercioComponent}
 ];
 
 @NgModule({

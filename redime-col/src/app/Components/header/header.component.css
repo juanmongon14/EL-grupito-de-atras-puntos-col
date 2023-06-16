@@ -71,8 +71,12 @@ header ul li a:hover {
 
 /* Estilos celulares */
 
-@media screen and (max-width:414px) {
-
+@media screen and (min-width:375px) and (max-width:414px) {
+  .opciones a {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    font-size: 12px !important;
+  }
 }
 
 /* Estilos tabletas/iPad */
