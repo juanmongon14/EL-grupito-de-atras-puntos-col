@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 .header {
     background: #242F9B;
     border-radius: 5px;
@@ -113,7 +115,11 @@
     margin-right: 10px;
   }
   
-  .campo-editar-titulo input {
+  .campo-editar-titulo input,
+  .correo-editar-titulo input,
+  .telefono-editar-titulo input,
+  .contraseña-editar-titulo input,
+  .direccion-editar-titulo input {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -152,12 +158,31 @@
   .overlay:hover {
     opacity: 1;
   }
+
+  .botones {
+    margin:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guardar, .regresar {
+    height: 40px;
+    width: 120px;
+    font-family: 'Abel', sans-serif;
+    font-size: 17px;
+  }
+
   @media screen and (max-width: 767px) {
     .logo img {
       width: 150px;
     }
   
-    .campo-editar-titulo input {
+    .campo-editar-titulo input,
+    .correo-editar-titulo input,
+    .telefono-editar-titulo input,
+    .contraseña-editar-titulo input,
+    .direccion-editar-titulo input {
       width: 100%;
     }
   }

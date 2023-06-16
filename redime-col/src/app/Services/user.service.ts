@@ -66,7 +66,7 @@ export class UserService {
     return this.http.get(getUrl);
   }
 
-  update(body:any){
+  updateUser(body:any){
     const updateUrl = `${this.ApiUrl}/update/${body._id}`
     const formData = body
 
