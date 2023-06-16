@@ -158,6 +158,9 @@ margin: 0 auto;
     font-weight: 4000;
 }
 
+.move-image {
+    animation: moveAnimation 2s infinite alternate;
+}
 
 
 @media screen and (max-width:800px){
@@ -196,4 +199,13 @@ margin: 0 auto;
     }
 
 
+}
+
+@keyframes moveAnimation {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
 }

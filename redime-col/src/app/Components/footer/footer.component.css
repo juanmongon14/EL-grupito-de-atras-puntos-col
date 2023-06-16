@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 footer{
-    background: #242F9B;
-    height: 80px;
+    background: #24309be7;
+    height: 120px;
     display: flex;
     align-items: center;
     padding-right: 25px;
@@ -11,10 +11,18 @@ footer{
     padding-bottom: 3px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: lighter;
-    color: #AAAAAA;
+    color: #cccaca;
 }
 
-.contenedor {
+/* .contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.contenedor{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -36,9 +44,32 @@ footer{
     font-size: 15px;
 }
 
+.logorc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .logorc img {
     height: 60px;
     width: 60px;
+}
+
+.logincomercio {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logincomercio a {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #cccaca;
+    text-align: center;
+
 }
 
 .redes {
@@ -53,4 +84,69 @@ footer{
     width: 50px;
 }
 
+/* Estilos celulares */
 
+@media screen and (max-width:414px) {
+    footer {
+        height: 500px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .contenedor {
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .marca,.logorc,.redes {
+        width: 100%;
+    }
+    .marca {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .marca p {
+        font-weight: 200;
+        font-size: 15px;
+        text-align: center;
+    }
+    .logorc .logincomercio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* Estilos tabletas/iPad */
+
+@media screen and (max-width:912px){
+    footer {
+        height: 150px;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .contenedor {
+        max-width: 100%;
+        height: 75%;
+    }
+    .marca {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .marca h2 {
+        font-size: 23px;
+        text-align: center;
+    }
+    .marca p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .logincomercio a {
+        font-size: 14.5px;
+    }
+}

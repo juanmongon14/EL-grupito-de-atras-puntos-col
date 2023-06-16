@@ -16,6 +16,8 @@ import { EditarUsuarioComponent } from './Pages/editar-usuario/editar-usuario.co
 import { EditarComercioComponent } from './Pages/editar-comercio/editar-comercio.component';
 import { LoginComercioComponent } from './Pages/login-comercio/login-comercio.component';
 import { RegistroComercioComponent } from './Pages/registro-comercio/registro-comercio.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { RegistroComercioComponent } from './Pages/registro-comercio/registro-co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
