@@ -8,6 +8,11 @@ import { UserService } from '../../Services/user.service';
 })
 export class EditarUsuarioComponent {
   userProfile!:any;
+  editValue:boolean=false;
+
+  editProfile(){
+    this.editValue=true;
+  }
 
   constructor(private UserService:UserService){}
 
@@ -18,5 +23,9 @@ export class EditarUsuarioComponent {
         this.userProfile = response;
       })
     this.UserService.updateUser(this.userProfile)
+  }
+
+  cancelUpdate(){
+    this.editValue=false;
   }
 }
