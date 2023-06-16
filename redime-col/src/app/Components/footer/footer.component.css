@@ -87,7 +87,7 @@ footer{
 
 /* Estilos celulares */
 
-@media screen and (min-width:375px) and (max-width:414px) {
+@media screen and (min-width:370px) and (max-width:420px) {
     footer {
         height: 300px !important;
         padding: 0px !important;
