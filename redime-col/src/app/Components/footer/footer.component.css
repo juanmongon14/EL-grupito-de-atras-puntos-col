@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+footer{
+    background: #24309be7;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    color: #cccaca;
+}
+
+/* .contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    width: 25%;
+    margin-top: 10px;
+}
+
+.marca h2 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.marca p {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.logorc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logorc img {
+    height: 60px;
+    width: 60px;
+}
+
+.logincomercio {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logincomercio a {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #cccaca;
+    text-align: center;
+
+}
+
+.redes {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redes img {
+    height: 50px;
+    width: 50px;
+}
+
+/* Estilos celulares */
+
+@media screen and (min-width:370px) and (max-width:420px) {
+    footer {
+        height: 300px !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    .contenedor {
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly !important;
+    }
+    .marca,.logorc,.redes {
+        width: 100%;
+    }
+    .marca {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .marca p {
+        font-weight: 200;
+        font-size: 15px;
+        text-align: center;
+    }
+    .logorc .logincomercio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .redes {
+        margin-top: 20px !important;
+    }
+}
+
+/* Estilos tabletas/iPad */
+
+@media screen and (max-width:912px){
+    footer {
+        height: 150px;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .contenedor {
+        max-width: 100%;
+        height: 75%;
+    }
+    .marca {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .marca h2 {
+        font-size: 23px;
+        text-align: center;
+    }
+    .marca p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .logincomercio a {
+        font-size: 14.5px;
+    }
+}

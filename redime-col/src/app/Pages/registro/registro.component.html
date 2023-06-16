@@ -1,0 +1,43 @@
+<div class="body">
+    <main class="form-register" id="form-register">
+        <div class="mb-4 imglogo"></div>
+          <form class="formulario" (ngSubmit)="createUser()" #createForm="ngForm">
+            <!-- <h1>Regístrate</h1> -->
+             
+             <img src="../../../assets/img/Icono_redime_colombia-1.png" alt="logo" class="logo1">
+           
+            <br>
+            <div class="form">
+              <label for="nombre"></label>
+              <input type="text" class="nombre" placeholder="Nombre completo" name="name" [(ngModel)]="name" required>
+            </div>
+            <div class="form">
+              <label for="correo"></label>
+              <input type="email" class="correo" placeholder="Correo Electrónico" name="email" [(ngModel)]="email" required>
+            </div>
+            <div class="form">
+              <label for="celular"></label>
+              <input type="number" class="celular" placeholder="Celular" name="phone" [(ngModel)]="phone" required>
+            </div>
+            <div class="form">
+              <label for="cedula">  </label>
+              <input type="text" class="cedula" placeholder="Documento de Identidad" name="documentId" [(ngModel)]="documentId" required>
+            </div>          
+            <div class="form">
+              <label for="password"></label>
+              <input type="password" class="password" placeholder="Contraseña" name="password" [(ngModel)]="password" required>
+            </div>
+            <div class="checkbox">
+              <label for="checkbox">
+                <input type="checkbox" class="check" value="agree-terms" required> Estoy de acuerdo con los <a href="https://www.puntoscolombia.com/personas/legal/persona-natural">Términos y Condiciones</a>.</label>
+            </div>
+            <br>
+            <button class="boton" type="submit" [disabled]="!createForm.form.valid">Registrarse</button>
+            <br>
+            <br>
+            <p class="copyright">&copy; Colombia Redime</p>
+          </form>
+        </main>
+</div>
+
+<app-footer></app-footer>

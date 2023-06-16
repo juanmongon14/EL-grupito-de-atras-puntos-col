@@ -1,0 +1,29 @@
+
+<div class="body">  
+    <main class="form-login" id="form-register">
+        <div class="mb-4 imglogo"></div>
+          <form class="formulario" (ngSubmit)="loginUser()" #loginForm="ngForm">
+             
+             <img src="../../../assets/img/Icono_redime_colombia-1.png" alt="logo" class="logo1">
+           
+            <br>
+           
+            <div class="form">
+              <label for="correo"></label>
+              <input type="email" class="correo" placeholder="Correo Electronico" name="email" [(ngModel)]="email" required>
+     
+            </div>
+            <br>
+            <div class="form">
+              <label for="password"></label>
+              <input type="password" class="password" placeholder="Contraseña" name="password" [(ngModel)]="password" required>
+            </div>
+            <br>
+            <br>
+            <button class="boton" type="submit" [disabled]="!loginForm.form.valid">Iniciar sesión</button>
+            <p class="copyright">&copy; Redime Colombia</p>
+          </form>
+        </main>
+</div> 
+
+<app-footer></app-footer>
