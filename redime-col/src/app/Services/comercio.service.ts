@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class ComercioService {
 
-  private nit!:string;
+  private nitComercio!:string;
   private ApiUrl = "http://localhost:5000/comercios";
 
   constructor(private http:HttpClient, private router: Router) {}
@@ -23,7 +23,7 @@ export class ComercioService {
       (response:any) => {
         localStorage.setItem("token", response.token)
         console.log("response: ", response);
-        this.nit = formData.nit;
+        this.nitComercio = formData.nit;
         this.router.navigate(['/perfilcomercio']);
       },
       (error) => {
@@ -53,6 +53,28 @@ export class ComercioService {
       (response:any) => {
         console.log("Registro exitoso. ", response);
         this.router.navigate(['/logincomercio']);
+      },
+      (error) => {
+        console.log("Error: ", error);
+      }
+    )
+  }
+
+  getComercio(){
+    const getUrl = `${this.ApiUrl}/${this.nitComercio}`;
+    return this.http.get(getUrl);
+  }
+
+  updateComercio(body:any){
+    const updateUrl = `${this.ApiUrl}/update/${body._id}`
+    const formData = body
+
+    console.log("Usuario actualizado con éxito", formData, updateUrl);
+
+    this.http.put(updateUrl,formData,{headers:this.getAuthHeaders()})
+    .subscribe(
+      (response:any) => {
+        console.log("Usuario actualizado con éxito. ", response);
       },
       (error) => {
         console.log("Error: ", error);

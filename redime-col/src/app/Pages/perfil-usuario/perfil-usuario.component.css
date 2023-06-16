@@ -31,14 +31,32 @@
   }
   .usuario-1{
     font-family: 'Abel', sans-serif ;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 30px;
+ }
+ .usuario-1 ul{
+  list-style: none;
+ }
+ .usuario-1 ul li{
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+ }
+ .editarperfil{
+  margin-left: 30px;
+  margin-top: 40px;
+ }
+ .editarperfil button{
+  border: 1px solid #242F9B;
+  border-radius: 5px;
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
  }
  .tus-puntos {
     font-family: 'Abel', sans-serif;
     display: flex; 
     align-items: center; 
-    margin-left: 10px;
+    margin-left: 30px;
     margin-top: 50px;
   }
   

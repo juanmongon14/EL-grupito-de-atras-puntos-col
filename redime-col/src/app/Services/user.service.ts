@@ -61,6 +61,28 @@ export class UserService {
     )
   }
 
+  getUser(){
+    const getUrl = `${this.ApiUrl}/${this.userEmail}`;
+    return this.http.get(getUrl);
+  }
+
+  update(body:any){
+    const updateUrl = `${this.ApiUrl}/update/${body._id}`
+    const formData = body
+
+    console.log("Usuario actualizado con éxito", formData, updateUrl);
+
+    this.http.put(updateUrl,formData,{headers:this.getAuthHeaders()})
+    .subscribe(
+      (response:any) => {
+        console.log("Usuario actualizado con éxito. ", response);
+      },
+      (error) => {
+        console.log("Error: ", error);
+      }
+    )
+  }
+
   private getAuthHeaders():HttpHeaders{
     const authToken = localStorage.getItem("token");
     const headers = new HttpHeaders({"Authorization":`Bearer ${authToken}`});

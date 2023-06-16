@@ -8,11 +8,18 @@
         <img src="assets/img/download-removebg-preview.png" alt="">
     </div>
     <div class="usuario-1">
-        <h1>Usuario 1</h1>
+        <ul>
+            <li>{{userProfile.name}}</li>
+            <br>
+            <li>{{userProfile.email}}</li>
+        </ul>
+    </div>
+    <div class="editarperfil">
+        <button routerLink="/editarusuario">Editar perfil</button>
     </div>
     <div class="tus-puntos">
         <h2>Tus puntos</h2>
-        <h1 class="puntos">500</h1>
+        <h1 class="puntos">100</h1>
     </div>
     <div class="container">
         <div class="tus-bonos">
